@@ -1,0 +1,31 @@
+{
+  "name": "email-server",
+  "version": "1.0.0",
+  "description": "Basic Email Server which will recevie emails and send emails both single and bulk emails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejasborate11/email-server.git"
+  },
+  "keywords": [
+    "Email-Server",
+    "emails",
+    "send",
+    "receive"
+  ],
+  "author": "Tejas Borate (tejasborate2@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejasborate11/email-server/issues"
+  },
+  "homepage": "https://github.com/tejasborate11/email-server#readme",
+  "dependencies": {
+    "@types/smtp-server": "^3.5.10",
+    "smtp-server": "^3.13.3"
+  }
+}
