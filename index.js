@@ -3,7 +3,7 @@ const SMTPServer = require("smtp-server").SMTPServer;
 const server = new SMTPServer({
   allowInsecureAuth: true,
   authOptional: true,
-  secure: true,
+  //   secure: true,
   onConnect(session, cb) {
     console.log("onConnect==> ", session.id);
     cb();
@@ -24,8 +24,8 @@ const server = new SMTPServer({
   },
 });
 
-server.listen(465, () => {
-  console.log("Server listening on port 465");
+server.listen(25, () => {
+  console.log("Server listening on port 25");
 });
 
 // server.listen(465,() => {
